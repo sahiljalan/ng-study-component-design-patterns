@@ -1,13 +1,16 @@
-:host {
+[container] {
     display: flex;
     background-color: black;
-    padding: 0px 15px;
     font-family: system-ui;
     font-weight: 200;
     font-size: 16px;
-    height: 100%;
-    width: calc(100vw - 30px);
+    height: 100vh;
+    width: 100%;
     flex-direction: column;
+    [sub-container] {
+        padding: 0px 15px;
+        width: calc(100vw - 30px);
+    }
 }
 
 .header {
@@ -21,7 +24,10 @@
 
 .body {
     background-color: whitesmoke;
-    min-height: calc(100vh - 64px - 121px)
+    min-height: calc(100vh - 64px - 121px);
+    width: inherit;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer {
