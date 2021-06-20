@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-study-component-design-patterns';
+  popupToggle: boolean;
+
+  togglePopup() {
+    this.popupToggle = !this.popupToggle
+  }
 }
+
+

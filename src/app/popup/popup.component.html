@@ -1,3 +1,6 @@
-<div title>
-   popup Module
+<div class="popup-container" [style.right.px]="isOpen ? '0' : '-400'">
+   <button class="close" (click)="close()">X</button>
+   <div class="content">
+         CONTENT
+    </div>
 </div>
