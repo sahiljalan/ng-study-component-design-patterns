@@ -1,0 +1,30 @@
+:host {
+    display: flex;
+    background-color: black;
+    padding: 0px 15px;
+    font-family: system-ui;
+    font-weight: 200;
+    font-size: 16px;
+    height: 100%;
+    width: calc(100vw - 30px);
+    flex-direction: column;
+}
+
+.header {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: inherit;
+}
+
+.body {
+    background-color: whitesmoke;
+    min-height: calc(100vh - 64px - 121px)
+}
+
+.footer {
+    background-color: black;
+    min-height: 121px;
+}
