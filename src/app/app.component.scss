@@ -16,7 +16,7 @@
 .header {
     color: whitesmoke;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 90%;
     width: inherit;
@@ -24,10 +24,20 @@
 
 .body {
     background-color: whitesmoke;
-    min-height: calc(100vh - 64px - 121px);
+    min-height: calc(100vh - 86px - 121px);
     width: inherit;
     display: flex;
     flex-direction: row;
+    .component {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        height: fit-content;
+        padding: 24px;
+        &>span {
+            align-self: center;
+        }
+    }
 }
 
 .footer {

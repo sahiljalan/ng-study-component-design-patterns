@@ -1,17 +1,17 @@
 <div container>
   <div sub-container>
-    <div style="background-color: black;height: 64px;">
+    <div style="background-color: black;height: 86px;">
       <div class="header">
         <h1>Angular Component Design Patterns</h1>
       </div>
     </div>
     <div class="body">
-      <div title>
-        Popup Component <button (click)="togglePopup()">Toggle Popup</button>
+      <div class="component">
+        <span title>Popup Component</span> <button (click)="togglePopup()">Toggle Popup</button>
      </div>
     </div>
     <div class="footer">
     </div>
   </div>
-  <app-popup [(isOpen)]="popupToggle"></app-popup>
+  <app-popup [isOpen]="popupToggle" (closed)="popupToggle = $event"></app-popup>
 </div>
