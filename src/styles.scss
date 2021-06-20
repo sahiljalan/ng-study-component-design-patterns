@@ -9,21 +9,23 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .mat-h1, .mat-headline, .mat-typography h1 {
-    font: 200 32px/48px Roboto, "Helvetica Neue", sans-serif;
+    font: 200 48px/56px Roboto, "Helvetica Neue", sans-serif;
     letter-spacing: normal;
     margin: 0px;
 }
 
 [title] {
-    font-size: 24px;
-    padding: 20px;
+    font-size: 36px;
+    padding: 0px 20px;
 }
 
 button {
-    padding: 8px 12px;
+    padding: 12px 16px;
     background: gold;
-    border: 1px solid;
+    text-transform: uppercase;
+    border: 1px solid rgba(0,0,0,0);
     color: black;
+    border-radius: 4px;
     &:hover {
         background-color: rgba(0,0,0,0.8);
         border: 1px solid gold;
